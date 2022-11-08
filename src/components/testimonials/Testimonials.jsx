@@ -1,8 +1,9 @@
 import React from 'react'
+import './testimonials.css';
 
 function Testimonials() {
   return (
-    <div>Testimonials</div>
+    <section id="testimonials">Testimonials</section>
   )
 }
 
