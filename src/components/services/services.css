@@ -25,7 +25,7 @@
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.services__head > h3 {
+.services__head>h3 {
     color: var(--color-bg);
     font-size: 1rem;
     text-align: center;
@@ -51,3 +51,25 @@ services__list li {
     font-size: 0.9rem;
 }
 
+
+/* media queries for medium width devices */
+@media screen and (max-width:1024px) {
+    .container__services {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .services {
+        height: auto;
+
+    }
+}
+
+/* media queries for small width devices */
+@media screen and (max-width:600px) {
+
+    .container__services {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
