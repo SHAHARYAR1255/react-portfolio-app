@@ -1,11 +1,12 @@
 import React from 'react'
 import './portfolio.css';
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
+import IMG1 from "../../assets/portfolio1.png";
+import IMG2 from "../../assets/portfolio2.png";
+import IMG3 from "../../assets/portfolio3.png";
+import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG6 from "../../assets/portfolio6.png";
+import IMG7 from "../../assets/portfolio7.png";
 // import IMG7 from "../../assets/portfolio7.jpg";
 // import IMG8 from "../../assets/portfolio8.jpg";
 
@@ -28,7 +29,7 @@ function Portfolio() {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="por" />
+            <img src={IMG2} alt="por" />
           </div>
           <h3>tejrekra jrjerltw</h3>
           <div className="portfolio__item-cta">
@@ -38,7 +39,7 @@ function Portfolio() {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="por" />
+            <img src={IMG3} alt="por" />
           </div>
           <h3>tejrekra jrjerltw</h3>
           <div className="portfolio__item-cta">
@@ -48,7 +49,7 @@ function Portfolio() {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="por" />
+            <img src={IMG4} alt="por" />
           </div>
           <h3>tejrekra jrjerltw</h3>
           <div className="portfolio__item-cta">
@@ -58,7 +59,7 @@ function Portfolio() {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="por" />
+            <img src={IMG5} alt="por" />
           </div>
           <h3>tejrekra jrjerltw</h3>
           <div className="portfolio__item-cta">
@@ -68,7 +69,7 @@ function Portfolio() {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt="por" />
+            <img src={IMG6} alt="por" />
           </div>
           <h3>tejrekra jrjerltw</h3>
           <div className="portfolio__item-cta">
