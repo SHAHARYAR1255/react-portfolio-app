@@ -1,15 +1,6 @@
 import React from 'react'
 import './portfolio.css';
-import IMG1 from "../../assets/portfolio1.png";
-import IMG2 from "../../assets/portfolio2.png";
-import IMG3 from "../../assets/portfolio3.png";
-import IMG4 from "../../assets/portfolio4.png";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.png";
-import IMG7 from "../../assets/portfolio7.png";
-// import IMG7 from "../../assets/portfolio7.jpg";
-// import IMG8 from "../../assets/portfolio8.jpg";
-
+import { dataportfolio } from '../../data';
 function Portfolio() {
   return (
     <section id="portfolio">
@@ -17,66 +8,20 @@ function Portfolio() {
       <h2>Portfolio</h2>
 
       <div className="container container__portfolio">
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="por" />
-          </div>
-          <h3>tejrekra jrjerltw</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn' target="_blank">Github</a>
-            <a href="" className='btn' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG2} alt="por" />
-          </div>
-          <h3>tejrekra jrjerltw</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn' target="_blank">Github</a>
-            <a href="" className='btn' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG3} alt="por" />
-          </div>
-          <h3>tejrekra jrjerltw</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn' target="_blank">Github</a>
-            <a href="" className='btn' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG4} alt="por" />
-          </div>
-          <h3>tejrekra jrjerltw</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn' target="_blank">Github</a>
-            <a href="" className='btn' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG5} alt="por" />
-          </div>
-          <h3>tejrekra jrjerltw</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn' target="_blank">Github</a>
-            <a href="" className='btn' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG6} alt="por" />
-          </div>
-          <h3>tejrekra jrjerltw</h3>
-          <div className="portfolio__item-cta">
-            <a href="" className='btn' target="_blank">Github</a>
-            <a href="" className='btn' target="_blank">Live Demo</a>
-          </div>
-        </article>
+        {dataportfolio.map((dat, i) => {
+          return (
+            <article key={i} className='portfolio__item'>
+              <div className="portfolio__item-image">
+                <img src={dat.img} alt="por" />
+              </div>
+              <h3>{dat.desctiption}</h3>
+              <div className="portfolio__item-cta">
+                <a href={dat.github} rel="noreferrer" className='btn' target="_blank">Github</a>
+                <a href={dat.link} className='btn' rel="noreferrer" target="_blank">Live Demo</a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   )

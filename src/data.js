@@ -4,7 +4,6 @@ import IMG3 from "./assets/portfolio3.png";
 import IMG4 from "./assets/portfolio4.png";
 import IMG5 from "./assets/portfolio5.png";
 import IMG6 from "./assets/portfolio6.png";
-import IMG7 from "./assets/portfolio7.png";
 
 const dataabout = {
     title: "About my self",
@@ -66,38 +65,74 @@ const services = [{
     description: "",
 },
 ];
+const experience = {
+    frontend: [
 
+        { skill: "HTML", level: "Experienced" },
+        { skill: "CSS", level: "Intermediate" },
+        { skill: "Javascript", level: "Experienced" },
+        { skill: "Bootstrap", level: "Experienced" },
+        { skill: "Tailwind css", level: "Experienced" },
+        { skill: "React", level: "Experienced" },
+
+    ],
+
+    backend: [
+        { skill: "Nodejs", level: "Intermediate" },
+        { skill: "Express", level: "Intermediate" },
+        { skill: "MongoDB", level: "Intermediate" },
+        { skill: "MySQL", level: "Intermediate" },
+        { skill: "Azure", level: "Intermediate" },
+        { skill: "Git", level: "Intermediate" },
+
+    ]
+
+
+
+
+};
 const dataportfolio = [
 
     {
-        img: Mperc,
-        desctiption: "Landing page of Mega Project Exhibition & Robotics Competition",
+        img: IMG1,
+        desctiption: "Landing page of Mega Project Exhibition & Robotics Competition (MPERC'22)",
         link: "https://mperc.sentec.live/",
+        github: ""
     },
     {
-        img: Mernday,
+        img: IMG3,
         desctiption: "Mernday React with Firebase",
         link: "https://roadtofirebase-ae0cc.web.app/",
+        github: ""
     },
 
     {
-        img: Sentec,
+        img: IMG2,
         desctiption: "Official Website of Society For The Promotion Of Science, Engineering & Technology",
         link: "https://www.sentec.live/",
+        github: ""
+    },
+    // {
+    //     img: Imagess,
+    //     desctiption: "Expense Tracker App with React",
+    //     link: "https://react-expense-tracker-malik1255.surge.sh/",
+    // },
+    {
+        img: IMG4,
+        desctiption: "React Portfolio with react-bootstrap",
+        link: "https://covid19statswebsite.netlify.com/",
+        github: ""
     },
     {
-        img: Imagess,
-        desctiption: "Expense Tracker App with React",
-        link: "https://react-expense-tracker-malik1255.surge.sh/",
-    },
-    {
-        img: CovidImage,
+        img: IMG5,
         desctiption: "Covid-19 tracker using React, Chartjs & MaterialUI",
         link: "https://covid19statswebsite.netlify.com/",
+        github: ""
     }, {
-        img: ShoeStore,
+        img: IMG6,
         desctiption: "Shoe Store Web App with React Router",
         link: "https://malik-shoestore.surge.sh/",
+        github: ""
     }
 ];
 
@@ -121,7 +156,7 @@ const socialprofils = {
     twitch: "#",
 };
 export {
-   
+
     dataabout,
     dataportfolio,
     worktimeline,
@@ -129,5 +164,6 @@ export {
     services,
     contactConfig,
     socialprofils,
-   
+    experience
+
 };
