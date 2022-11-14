@@ -10,7 +10,7 @@ import SENTEC from './assets/sentec.jpg';
 const dataabout = {
     experience: 1,
     education: "Bachelors",
-    projects: "5+",
+    projects: "10+",
     title: "About my self",
     about: "I have over a couple of years of experience in delivering web applications and I like making life better through technology. My work currently consists of freelance clients and side projects. My freelance full stack development roots are in React, Firebase, Node.js, MongoDB, and others.",
     aboutme: "ELectrical Engineer and a MERN stack developer trying to seek and mantain full-time position that offers professional challenges utilizing skills, excellent timemanagement & problem solving skills.",
