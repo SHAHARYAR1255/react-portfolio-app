@@ -6,6 +6,7 @@
 
 }
 
+/* 
 .inline {
     display: flex;
     padding: 2rem;
@@ -18,7 +19,7 @@
 .inline h3 {
     padding-left: 2rem;
     font-size: 1.3rem;
-}
+} */
 
 .inline__a {
     color: var(--color-primary);
@@ -53,14 +54,14 @@
 
 
 @media screen and (max-width: 1024px) {
-    .testimonials__container {
-        width: 60%;
+    .container.testimonials__container {
+        width: var(--container-width-md);
     }
 }
 
 
 @media screen and (max-width: 600px) {
-    .testimonials__container {
+    .container.testimonials__container {
         width: var(--container-width-sm);
     }
 

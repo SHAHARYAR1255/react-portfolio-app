@@ -15,7 +15,7 @@ function Experience() {
           <div className="experience__content">
             {experience.frontend.map((exp, i) => {
               return (
-                <article className='experience__details'>
+                <article key={i} className='experience__details'>
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>{exp.skill}</h4>
@@ -32,7 +32,7 @@ function Experience() {
           <div className="experience__content">
             {experience.backend.map((exp, i) => {
               return (
-                <article className='experience__details'>
+                <article key={i} className='experience__details'>
                   <BsPatchCheckFill className="experience__details-icon" />
                   <div>
                     <h4>{exp.skill}</h4>

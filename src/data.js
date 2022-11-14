@@ -31,7 +31,7 @@ const worktimeline = [
         where: "IEEE Student Branch NEDUET",
         date: "March, 2020 - March 2021",
         link: "https://www.facebook.com/IEEENEDUET",
-        short: "IEEE"
+        short: "IEEE-SB NEDUET"
 
     },
     {
