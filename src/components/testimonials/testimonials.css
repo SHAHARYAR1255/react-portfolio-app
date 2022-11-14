@@ -2,14 +2,30 @@
     width: 40%;
     background-color: var(--color-bg-variant);
     border-radius: 2rem;
-    padding-bottom:  4rem;
+    padding-bottom: 4rem;
 
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
-    
+.inline {
+    display: flex;
+    padding: 2rem;
 }
- 
+
+.inline h4 {
+    font-size: 1.4rem;
+}
+
+.inline h3 {
+    padding-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.inline__a {
+    color: var(--color-primary);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {}
+
 .client__avatar {
     width: 4rem;
     aspect-ratio: 1/1;

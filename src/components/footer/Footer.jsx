@@ -3,6 +3,7 @@ import './footer.css'
 import { FaFacebook } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
 import { IoLogoTwitter } from 'react-icons/io';
+import { socialprofils } from '../../data';
 
 function index() {
   return (
@@ -21,11 +22,10 @@ function index() {
       </ul>
 
       <div className="footer__socials">
-        <a href="http://"><FaFacebook /></a>
-        <a href="http://"><FiInstagram /></a>
-        <a href="http://"><IoLogoTwitter /></a>
+        <a href={socialprofils.facebook}><FaFacebook /></a>
+        <a href={socialprofils.instagram}><FiInstagram /></a>
+        <a href="#"><IoLogoTwitter /></a>
       </div>
-
       <div className="footer__copyright">
         <small>&copy; Shaharyar Malik. All rights reserved</small>
       </div>

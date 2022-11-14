@@ -4,6 +4,7 @@ import ME from '../../assets/me-about.jpg';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
+import { dataabout } from '../../data';
 
 function About() {
   return (
@@ -22,26 +23,24 @@ function About() {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>2+ years commercial experience</small>
+              <small>{`${dataabout.experience}+ years commercial experience`}</small>
             </article>
 
             <article className='about__card'>
               <FiUsers className='about__icon' />
-              <h5>Clients</h5>
-              <small>10+</small>
+              <h5>Education</h5>
+              <small>{dataabout.education}</small>
             </article>
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>30+</small>
+              <small>{dataabout.projects}</small>
             </article>
 
           </div>
 
-          <p> the leader in cloud-based software for the global life sciences industry. Committed to innovation, product excellence,
-            and customer success, our customers range from the world’s largest pharmaceutical companies to emerging biotechs. Veeva’s
-            software helps our customers bring medicines and therapies to patients faster.</p>
+          <p> {dataabout.about}</p>
         </div>
 
         <a href="#contact" className='btn btn-primary'>Lets Talk</a>

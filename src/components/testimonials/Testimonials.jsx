@@ -1,9 +1,6 @@
 import React from 'react'
 import './testimonials.css';
-import AVTR1 from '../../assets/avatar1.jpg';
-import AVTR2 from '../../assets/avatar2.jpg';
-import AVTR3 from '../../assets/avatar3.jpg';
-import AVTR4 from '../../assets/avatar4.jpg';
+import { worktimeline } from '../../data.js';
 
 // core version + navigation, pagination modules:
 import { Pagination } from 'swiper';
@@ -25,8 +22,8 @@ import 'swiper/css/scrollbar';
 function Testimonials() {
   return (
     <section id="testimonials">
-      <h5>Review From Clients</h5>
-      <h2>Testimonials</h2>
+      <h5>History</h5>
+      <h2>Work Timeline</h2>
 
       <Swiper
         // install Swiper modules
@@ -36,63 +33,39 @@ function Testimonials() {
         pagination={{ clickable: true }}
 
         className="container testimonials__container">
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="" />
-          </div>
-          <h5 className='client__name'>namfmdwmdwd sadadd</h5>
-          <small className='client__review'>
-
-            the leader in cloud-based software for the global life sciences industry. Committed to innovation, product excellence,
-            and customer success, our customers range from the world’s largest pharmaceutical companies to emerging biotechs. Veeva’s
-            software helps our customers bring medicines and therapies to patients faster.
-
-
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="" />
-          </div>
-          <h5 className='client__name'>namfmdwmdwd sadadd</h5>
-          <small className='client__review'>
-
-            the leader in cloud-based software for the global life sciences industry. Committed to innovation, product excellence,
-            and customer success, our customers range from the world’s largest pharmaceutical companies to emerging biotechs. Veeva’s
-            software helps our customers bring medicines and therapies to patients faster.
-
-
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="" />
-          </div>
-          <h5 className='client__name'>namfmdwmdwd sadadd</h5>
-          <small className='client__review'>
-
-            the leader in cloud-based software for the global life sciences industry. Committed to innovation, product excellence,
-            and customer success, our customers range from the world’s largest pharmaceutical companies to emerging biotechs. Veeva’s
-            software helps our customers bring medicines and therapies to patients faster.
-
-
-          </small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="" />
-          </div>
-          <h5 className='client__name'>namfmdwmdwd sadadd</h5>
-          <small className='client__review'>
-
-            the leader in cloud-based software for the global life sciences industry. Committed to innovation, product excellence,
-            and customer success, our customers range from the world’s largest pharmaceutical companies to emerging biotechs. Veeva’s
-            software helps our customers bring medicines and therapies to patients faster.
-
-
-          </small>
-        </SwiperSlide>
-
+        {worktimeline.map((work, i) => {
+          return (
+            <SwiperSlide key={i} className="testimonial">
+              <div className="client__avatar">
+                <img src={work.img} alt="" />
+              </div>
+              <h5 className='client__name'>{work.where}</h5>
+              <div>
+                <span className="inline">
+                  <h4>Position</h4>
+                  <h3 className='inline__a'>{work.jobtitle}</h3>
+                </span>
+              </div>
+              <div>
+                <span className="inline">
+                  <h4>Date </h4>
+                  <h3 className='inline__a'>{work.date}</h3>
+                </span>
+              </div>
+              <div>
+                <span className="inline">
+                  <h4>Visit</h4>
+                  <h3 className='inline__a'><a href={work.link}>{work.short}</a></h3>
+                </span>
+              </div>
+              {/* <small className='client__review'>
+                the leader in cloud-based software for the global life sciences industry. Committed to innovation, product excellence,
+                and customer success, our customers range from the world’s largest pharmaceutical companies to emerging biotechs. Veeva’s
+                software helps our customers bring medicines and therapies to patients faster.
+              </small> */}
+            </SwiperSlide>
+          );
+        })}
       </Swiper >
     </section >
   )
