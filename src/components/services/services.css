@@ -35,7 +35,7 @@
     padding: 2rem;
 }
 
-services__list li {
+.services__list li {
     display: flex;
     gap: 1rem;
     margin-bottom: 0.8rem;

@@ -68,16 +68,24 @@ const skills = [{
 ];
 
 const services = [{
-    title: "Front End React Developer",
-    description: "",
+    title: "React",
+    flavours: [
+        "Redux /Redux-toolkit /Flux",
+        "React-Router",
+        "React Bootstrap.",
+        "Material UI.",
+        "Swiper",
+        "Enzyme",
+        "ES-Lint",
+    ],
 },
 {
-    title: "MERN Stack Developer",
-    description: "",
+    title: "Backend",
+    flavours: ["express", "socket.io", "jsonwebtoken", "nodemailer", "bcryptjs","Axios", "cors", "Faker" ,"Multer"],
 },
 {
-    title: "Javascript Programmer",
-    description: "",
+    title: "Other",
+    flavours: ["mongoose", "mongodb", "puppeteer", "selenium-webdriver", "uuid", "jade"],
 },
 ];
 const experience = {
@@ -101,11 +109,8 @@ const experience = {
         { skill: "Git", level: "Intermediate" },
 
     ]
-
-
-
-
 };
+
 const dataportfolio = [
 
     {
@@ -156,7 +161,7 @@ const contactConfig = {
     YOUR_EMAIL: "shaharyar.malik2000@gmail.com",
     YOUR_PHONE: "+923172039912",
     YOUR_MESSENGER: "https://m.me/shaharyarm1",
-    description: "I’m Shaharyar Malik  _ Full stack devloper, learning Web3.0 technologies",
+    flavours: "I’m Shaharyar Malik  _ Full stack devloper, learning Web3.0 technologies",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -174,7 +179,6 @@ const socialprofils = {
     instagram: "https://www.instagram.com/shaharyar._.malik/"
 };
 export {
-
     dataabout,
     dataportfolio,
     worktimeline,
