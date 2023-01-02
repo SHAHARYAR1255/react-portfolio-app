@@ -6,12 +6,15 @@ import { BsWhatsapp } from 'react-icons/bs';
 import emailjs from 'emailjs-com';
 import { contactConfig } from '../../data';
 
+// import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+// dotenv.coknfig()
+
 function Contact() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
+    // console.log(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form, process.env.YOUR_PUBLIC_KEY);
+    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form, process.env.YOUR_PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
       }).catch((error) => {

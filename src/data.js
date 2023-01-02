@@ -4,6 +4,7 @@ import IMG3 from "./assets/portfolio3.png";
 import IMG4 from "./assets/portfolio4.png";
 import IMG5 from "./assets/portfolio5.png";
 import IMG6 from "./assets/portfolio6.png";
+import IMG7 from "./assets/portfolio7.png";
 import IEEE from './assets/ieee.jpg';
 import SENTEC from './assets/sentec.jpg';
 
@@ -112,6 +113,12 @@ const experience = {
 };
 
 const dataportfolio = [
+    {
+        img: IMG7,
+        desctiption: "An Ecommerce App (React, ReduxToolkit, SASS, Firebase) ",
+        link: "https://serene-sprite-5e27d2.netlify.app/",
+        github: "#"
+    },
 
     {
         img: IMG1,
@@ -149,12 +156,12 @@ const dataportfolio = [
         link: "https://covid19statswebsite.netlify.com/",
         github: "https://github.com/SHAHARYAR1255/covid-app.git"
     },
-    {
-        img: IMG6,
-        desctiption: "Shoe Store Web App with React Router",
-        link: "https://malik-shoestore.surge.sh/",
-        github: "https://github.com/SHAHARYAR1255/shoeStore.git"
-    }
+    // {
+    //     img: IMG6,
+    //     desctiption: "Shoe Store Web App with React Router",
+    //     link: "https://malik-shoestore.surge.sh/",
+    //     github: "https://github.com/SHAHARYAR1255/shoeStore.git"
+    // }
 ];
 
 const contactConfig = {
